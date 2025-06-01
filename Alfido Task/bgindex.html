@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adorable Background Changer</title>
+  <link rel="stylesheet" href="bgstyles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="fade-in">Adorable Background Changer</h1>
+    <p id="colorCode" class="fade-in">Click a button to change the background</p>
+
+    <div class="buttons">
+      <button id="colorBtn" title="Generate a new background">🎨 Change Background</button>
+      <button id="copyBtn" title="Copy current color">📋 Copy Color</button>
+      <button id="resetBtn" title="Reset background">♻️ Reset</button>
+
+      <label class="switch" title="Toggle gradient background">
+        <input type="checkbox" id="gradientToggle">
+        <span class="slider"></span>
+      </label>
+      <span class="labelText">Gradient</span>
+    </div>
+
+    <p id="timestamp" class="fade-in"></p>
+    <p id="contrastLabel" class="fade-in"></p>
+    <p id="quoteBox" class="fade-in"></p>
+
+    <div id="historyContainer">
+      <h3>Recent Colors</h3>
+      <ul id="colorHistory"></ul>
+    </div>
+  </div>
+
+  <script src="backgroundChanger.js"></script>
+</body>
+</html>

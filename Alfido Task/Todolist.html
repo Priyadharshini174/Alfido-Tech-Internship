@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adorable To-Do List 🧸</title>
+  <link rel="stylesheet" href="Todostyles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 My Lovely To-Do List</h1>
+    <p id="quote"></p>
+    
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="What's on your mind? 🐣">
+      <input type="date" id="dueDate">
+      <button onclick="addTask()">➕</button>
+    </div>
+
+    <div class="actions">
+      <button onclick="filterTasks('all')">🌈 All</button>
+      <button onclick="filterTasks('active')">🌞 Active</button>
+      <button onclick="filterTasks('completed')">🌙 Done</button>
+      <button onclick="clearCompleted()">🧹 Clear Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <audio id="completeSound" src="https://cdn.pixabay.com/download/audio/2022/02/23/audio_13b716176b.mp3?filename=success-fanfare-trumpets-6185.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

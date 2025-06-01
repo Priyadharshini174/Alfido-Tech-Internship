@@ -1,0 +1,118 @@
+:root {
+  --bg: #fff6f9;
+  --card: #ffeef2;
+  --accent: #ff8fab;
+  --text: #333;
+  --done: #ccc;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: var(--text);
+}
+
+.container {
+  width: 400px;
+  background: var(--card);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+#quote {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+input[type="text"], input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 60%;
+}
+
+button {
+  padding: 10px 14px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff6e94;
+}
+
+.actions {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  position: relative;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li .meta {
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+li .actions {
+  display: flex;
+  gap: 6px;
+}
+
+li button {
+  background-color: transparent;
+  color: var(--accent);
+  padding: 5px;
+  font-size: 18px;
+}
+
+li button:hover {
+  transform: scale(1.2);
+}
